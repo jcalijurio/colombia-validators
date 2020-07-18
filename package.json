@@ -1,8 +1,17 @@
 {
   "name": "colombia-validators",
-  "version": "1.0.0",
-  "description": "Validators for NIT Colombia",
-  "main": "index.js",
+  "version": "1.0.1",
+  "description": "Validators for Colombian documents and plates",
+  "main": "./colombia-validators.js",
+  "types": "./colombia-validators.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jcalijurio/colombia-validators.git"
+  },
+  "homepage": "https://github.com/jcalijurio/colombia-validators",
+  "bugs": {
+    "url": "https://github.com/jcalijurio/colombia-validators/issues"
+  },
   "scripts": {
     "test:lint": "tslint 'src/**/*.ts'",
     "test:run": "mocha -r ts-node/register tests/**/*.spec.ts",
@@ -13,8 +22,19 @@
     "minify": "npx uglify-js --compress --output dist/colombia-validators.min.js dist/tmp.js",
     "webpack": "tsc -d --removeComments & webpack ./dist/colombia-validators.js -o ./bundle.js"
   },
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "validator",
+    "validation",
+    "nit",
+    "rut",
+    "nit colombia",
+    "rut colombia"
+  ],
+  "author": {
+    "name": "Jorge Calijurio",
+    "email": "jorge@calweb.com.br"
+  },
+  "license": "MIT",
   "devDependencies": {
     "@types/chai": "^4.2.11",
     "@types/mocha": "^8.0.0",
