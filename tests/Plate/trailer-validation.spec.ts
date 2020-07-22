@@ -11,7 +11,8 @@ describe('Trailer Plate Format validation', () => {
 
     it('Must be valid when the value is OK', () => {
         // Arrange
-        const plates = ['R99999', 'R-99999', 'R12345', 'R-12345', 'r12345', 'r-12345'];
+        const plates = ['R99999', 'R-99999', 'R12345', 'R-12345', 'r12345', 'r-12345',
+            'S12345', 'S-12345', 's12345', 's-12345'];
 
         // Act
         const results = plates.map(plate => validator.validateTrailer(plate));
@@ -42,9 +43,9 @@ describe('Trailer Plate Format validation', () => {
         expect(results).not.contains(true);
     });
 
-    it('Must be invalid when the adjusted value size is different than 5', () => {
+    it('Must be invalid when the adjusted value size is different than 6', () => {
         // Arrange
-        const plates = ['R999999', 'R-9999', 'R123', 'r-123456'];
+        const plates = ['R999999', 'R-9999', 'R123', 'r-123456', 'S1234', 'S-123', 'S-123456'];
 
         // Act
         const results = plates.map(plate => validator.validateTrailer(plate));

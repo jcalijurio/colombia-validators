@@ -1,6 +1,6 @@
 export class ColombiaPlateValidator {
-    private _regexTankTruckPlate: RegExp = /^\T\d{4}$/i;
-    private _regexTrailerPlate: RegExp = /^\R\d{5}$/i;
+    private _regexTankTruckPlate: RegExp = /^T\d{4}$/i;
+    private _regexTrailerPlate: RegExp = /^(R|S)\d{5}$/i;
     private _regexCarPlate: RegExp = /^[a-zA-Z]{3}\d{3}$/i;
     private _regexMotorcyclePlate: RegExp = /^[a-zA-Z]{3}\d{2}[a-zA-Z]?$/i;
     private _regexTuktukPlate: RegExp = /^\d{3}[a-zA-Z]{3}$/i;
