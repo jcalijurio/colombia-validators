@@ -1,6 +1,7 @@
 colombia-validators
 ==============
 [![npm version](https://img.shields.io/npm/v/colombia-validators.svg)](https://www.npmjs.com/package/colombia-validators)
+[![Build Status](https://travis-ci.org/jcalijurio/colombia-validators.svg)](https://travis-ci.org/jcalijurio/colombia-validators)
 
 Colombia NIT/RUT number and Car Plate validators / Validaciones de numero NIT/RUT y Placa de vehículo.
 

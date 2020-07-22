@@ -1,6 +1,6 @@
 {
   "name": "colombia-validators",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Validators for Colombian documents and plates",
   "main": "./colombia-validators.js",
   "types": "./colombia-validators.d.ts",
