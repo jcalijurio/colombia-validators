@@ -30,7 +30,9 @@ const { ColombiaValidators } = require('colombia-validators');
 const validator = new ColombiaValidators();
 
 const isValid = validator.NIT.validate('564823570');
-const plateIsValid = validator.Plate.validate('ABC123');
+const carPlateIsValid = validator.Plate.validate('ABC123');
+const cargoPlateIsValid = validator.Plate.validate('R12345');
+const tuktukPlateIsValid = validator.Plate.validate('123ABC');
 ```
 ## On Browser
 
