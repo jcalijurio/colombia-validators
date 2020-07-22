@@ -29,6 +29,7 @@ const { ColombiaValidators } = require('colombia-validators');
 const validator = new ColombiaValidators();
 
 const isValid = validator.NIT.validate('564823570');
+const plateIsValid = validator.Plate.validate('ABC123');
 ```
 ## On Browser
 
@@ -43,12 +44,7 @@ const isValid = validator.NIT.validate('564823570');
 ```javascript
 var validator = new ColombiaValidators();
 var nitIsValid = validator.NIT.validate('564823570');
+var carPlateIsValid = validator.Plate.validate('ABC123');
+var cargoPlateIsValid = validator.Plate.validate('R12345');
+var tuktukPlateIsValid = validator.Plate.validate('123ABC');
 ```
-
-## ROADMAP
-
-New validators to be implemented.
-
-  - Car Plate
-  - Phone
-  - Postal Code
